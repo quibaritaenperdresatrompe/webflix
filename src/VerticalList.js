@@ -10,7 +10,7 @@ function VerticalList({ data, className }) {
     <ul className={classNames([classes.root, className])}>
       {data.map((entry) => (
         <li key={entry.id} className={classes.item}>
-          <Link to="/">
+          <Link to={`/movies/${entry.id}`} className={classes.link}>
             <MovieCard {...entry} />
           </Link>
         </li>

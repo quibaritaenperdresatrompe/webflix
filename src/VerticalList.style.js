@@ -12,6 +12,9 @@ const useStyles = createUseStyles({
   item: {
     padding: 8,
   },
+  link: {
+    textDecoration: "none",
+  },
 });
 
 export default useStyles;
