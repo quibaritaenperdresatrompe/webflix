@@ -340,5 +340,23 @@
       "popularity": 51.013,
       "media_type": "movie"
     }
-  ]
+  ],
+  "genres": {
+    "28": "Action",
+    "12": "Humour",
+    "53": "Science Fiction",
+    "10752": "Horreur",
+    "878": "Aventure",
+    "27": "Fantastique",
+    "35": "Animé",
+    "10749": "Policier",
+    "10402": "Amour",
+    "18": "Adolescent",
+    "80": "Famille",
+    "9648": "Documentaire",
+    "16": "Historique",
+    "10751": "Comédie",
+    "14": "Comédie musicale",
+    "36": "Biopic"
+  }
 }
