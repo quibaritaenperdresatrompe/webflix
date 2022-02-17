@@ -9,7 +9,7 @@ import Rating from "./Rating";
 
 const OVERVIEW_SIZE = 120;
 
-function Movie({ addToFavorite, favorites }) {
+function Movie() {
   const classes = useStyles();
   const [expand, setExpand] = useState(false);
   const toggle = () => setExpand(!expand);
@@ -63,11 +63,7 @@ function Movie({ addToFavorite, favorites }) {
       </p>
       <h2>Note du public</h2>
       <Rating value={movie.vote_average / 2} /> <h2>Contenu similaire</h2>
-      <HorizontalList
-        data={suggestions}
-        addToFavorite={addToFavorite}
-        favorites={favorites}
-      />
+      <HorizontalList data={suggestions} />
     </div>
   );
 }
