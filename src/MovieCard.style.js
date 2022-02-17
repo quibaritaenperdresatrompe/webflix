@@ -2,9 +2,6 @@ import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
   root: {
-    borderColor: "black",
-    borderWidth: 2,
-    borderStyle: "solid",
     height: 138,
     width: 92,
     backgroundImage: ({ imageURL }) => `url(${imageURL})`,

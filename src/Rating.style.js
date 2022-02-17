@@ -1,12 +1,15 @@
 import { createUseStyles } from "react-jss";
 
 const useStyles = createUseStyles({
-  root: {
-    padding: "4px 8px",
-    backgroundColor: "black",
-    color: "white",
-    fontSize: 10,
-    display: "inline-block",
+  star: {
+    padding: 8,
+    fontSize: 24,
+  },
+  empty: {
+    opacity: 0.3,
+  },
+  label: {
+    marginLeft: 8,
     fontWeight: 700,
   },
 });
