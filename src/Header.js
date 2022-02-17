@@ -6,7 +6,7 @@ function Header({ favorites }) {
   const classes = useStyles();
   return (
     <header className={classes.root}>
-      <img className={classes.logo} src="logo32.png" alt="Webflix log" />
+      <img className={classes.logo} src="./logo32.png" alt="Webflix log" />
       <h1 className={classes.title}>Webflix</h1>
       <nav className={classes.nav}>
         <Link className={classes.link} to="/">
