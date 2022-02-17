@@ -12,7 +12,7 @@ function buildUrl(value) {
     : `${process.env.REACT_APP_API_URL}/movie/popular?api_key=${process.env.REACT_APP_API_KEY}`;
 }
 
-function Home() {
+function Home({ addToFavorite, favorites }) {
   const classes = useStyles();
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -35,7 +35,12 @@ function Home() {
       {error && <div className={classes.error}>{error}</div>}
       {(isLoading || isFetching) && <div>Loading movies...</div>}
       {!isLoading && !error && (
-        <VerticalList className={classes.list} data={data?.results} />
+        <VerticalList
+          className={classes.list}
+          data={data?.results}
+          addToFavorite={addToFavorite}
+          favorites={favorites}
+        />
       )}
     </div>
   );

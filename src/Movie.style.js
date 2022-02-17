@@ -15,10 +15,10 @@ const useStyles = createUseStyles({
   },
   genres: {
     display: "flex",
+    flexWrap: "wrap",
   },
   genre: {
-    marginLeft: 4,
-    marginRight: 4,
+    margin: 4,
   },
   button: {
     border: "none",

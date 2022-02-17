@@ -8,16 +8,17 @@ function Rating({ value }) {
   const stars = Math.trunc(value);
   return (
     <div>
-      {Array.from({ length: stars }, () => (
-        <span role="img" aria-label="star" className={classes.star}>
+      {Array.from({ length: stars }, (v, k) => (
+        <span role="img" aria-label="star" className={classes.star} key={k}>
           ⭐
         </span>
       ))}
-      {Array.from({ length: MAX_STARS - stars }, () => (
+      {Array.from({ length: MAX_STARS - stars }, (v, k) => (
         <span
           role="img"
           aria-label="star"
           className={classNames([classes.star, classes.empty])}
+          key={k}
         >
           ⭐
         </span>

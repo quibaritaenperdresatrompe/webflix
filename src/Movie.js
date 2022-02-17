@@ -9,7 +9,7 @@ import Rating from "./Rating";
 
 const OVERVIEW_SIZE = 120;
 
-function Movie() {
+function Movie({ addToFavorite, favorites }) {
   const classes = useStyles();
   const [expand, setExpand] = useState(false);
   const toggle = () => setExpand(!expand);
@@ -39,8 +39,8 @@ function Movie() {
           </p>
           <div className={classes.genres}>
             {movie.genre_ids.map((genre) => (
-              <div className={classes.genre}>
-                <Genre key={genre} id={genre} />
+              <div key={genre} className={classes.genre}>
+                <Genre id={genre} />
               </div>
             ))}
           </div>
@@ -63,7 +63,11 @@ function Movie() {
       </p>
       <h2>Note du public</h2>
       <Rating value={movie.vote_average / 2} /> <h2>Contenu similaire</h2>
-      <HorizontalList data={suggestions} />
+      <HorizontalList
+        data={suggestions}
+        addToFavorite={addToFavorite}
+        favorites={favorites}
+      />
     </div>
   );
 }

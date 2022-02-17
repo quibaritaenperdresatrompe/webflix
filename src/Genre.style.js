@@ -8,6 +8,7 @@ const useStyles = createUseStyles({
     fontSize: 10,
     display: "inline-block",
     fontWeight: 700,
+    whiteSpace: "nowrap",
   },
 });
 
