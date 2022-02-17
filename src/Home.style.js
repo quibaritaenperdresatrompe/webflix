@@ -10,6 +10,7 @@ const useStyles = createUseStyles({
   list: {
     marginTop: 32,
   },
+  error: { padding: 8, color: "red" },
 });
 
 export default useStyles;

@@ -4,7 +4,7 @@ const useStyles = createUseStyles({
   root: {
     height: 138,
     width: 92,
-    backgroundImage: ({ imageURL }) => `url(${imageURL})`,
+    background: ({ imageURL }) => (imageURL ? `url(${imageURL})` : "grey"),
     overflow: "hidden",
   },
   title: {
